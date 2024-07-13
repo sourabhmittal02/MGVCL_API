@@ -237,5 +237,15 @@ namespace CallCenterCoreAPI.Controllers
 
         }
 
+        [HttpPost]
+        [Route("CreateComplaint")]
+        public async Task<IActionResult> CreateComplaint(ModelComplaintMgvcl  modelComplaintMgvcl )
+        {
+            ILogger<LoginRepository> modelLogger = _loggerFactory.CreateLogger<LoginRepository>();
+            LoginRepository modelloginRepository = new LoginRepository(modelLogger);
+            String lstComplaints = await modelloginRepository.CreateComplain(modelComplaintMgvcl);
+            return Ok(lstComplaints);
+        }
+
     }
 }

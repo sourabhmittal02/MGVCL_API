@@ -100,4 +100,17 @@ namespace CallCenterCoreAPI.Models.QueryModel
     }
 
 
+    public class ModelComplaintMgvcl
+    {
+        
+        public string p_compl_number { get; set; }
+        public string cons_no { get; set; }
+        public string reg_date { get; set; }
+        public string compl_category { get; set; }
+        public string compl_subcategory { get; set; }
+        public string compl_Details { get; set; }
+        public string consumer_mobile { get; set; }
+        public string complaint_source { get; set; }
+    }
+
 }

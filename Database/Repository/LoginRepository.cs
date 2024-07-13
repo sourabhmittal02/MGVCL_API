@@ -413,6 +413,38 @@ namespace CallCenterCoreAPI.Database.Repository
         #endregion
 
 
+
+        #region CreateComplain 
+        /// <summary>
+        /// Save Complaint
+        /// </summary>
+        /// <param name="complaintNo"></param>
+        /// <returns></returns>
+        public async Task<String> CreateComplain(ModelComplaintMgvcl  modelComplaintMgvcl )
+        {
+            string MGVCLCMSComplaintURL = MGVCLApiURL;
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post, MGVCLCMSComplaintURL);
+            var content = new MultipartFormDataContent();
+            content.Add(new StringContent(MGVCLsecret_key), "secret_key");
+            content.Add(new StringContent(MGVCLtoken), "token");
+            content.Add(new StringContent("LaunchComplaint"), "tag");
+            content.Add(new StringContent(modelComplaintMgvcl.p_compl_number), "p_compl_number");
+            content.Add(new StringContent(modelComplaintMgvcl.cons_no), "cons_no");
+            content.Add(new StringContent(modelComplaintMgvcl.reg_date), "reg_date");
+            content.Add(new StringContent(modelComplaintMgvcl.compl_category), "compl_category");
+            content.Add(new StringContent(modelComplaintMgvcl.compl_subcategory), "compl_subcategory");
+            content.Add(new StringContent(modelComplaintMgvcl.compl_Details), "compl_Details");
+            content.Add(new StringContent(modelComplaintMgvcl.consumer_mobile), "consumer_mobile");
+            content.Add(new StringContent(modelComplaintMgvcl.complaint_source), "complaint_source");
+            request.Content = content;
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            String s = await response.Content.ReadAsStringAsync();
+            SaveCMSResponse(modelComplaintMgvcl.p_compl_number, s, "CreateComplain");
+            return (s);
+        }
+        #endregion
     }
 
 
