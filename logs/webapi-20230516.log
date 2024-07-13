@@ -1,0 +1,8 @@
+[2023-05-16 10:36:18.206 +05:30  INF]  Data Source=192.168.1.33;Initial Catalog=AVVNL_CALL_CENTER_TEST;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-16 10:36:18.301 +05:30  INF]  Login success
+[2023-05-16 10:40:37.302 +05:30  ERR]  Object of type 'System.Int64' cannot be converted to type 'System.Int32'.
+[2023-05-16 10:40:37.382 +05:30  INF]  Login success
+[2023-05-16 22:02:36.593 +05:30  ERR]  Object of type 'System.TimeSpan' cannot be converted to type 'System.String'.
+[2023-05-16 22:02:36.648 +05:30  INF]  Invalid credentials
+[2023-05-16 22:11:13.692 +05:30  INF]  Data Source=192.168.1.33;Initial Catalog=AVVNL_CALL_CENTER_TEST;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-16 22:11:13.781 +05:30  INF]  Login success

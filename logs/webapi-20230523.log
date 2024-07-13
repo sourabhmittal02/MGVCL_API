@@ -1,0 +1,25 @@
+[2023-05-23 13:33:30.123 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2023-05-23 13:33:30.219 +05:30  INF]  Invalid credentials
+[2023-05-23 13:34:58.265 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:34:58.370 +05:30  INF]  Login success
+[2023-05-23 13:38:43.808 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:38:43.995 +05:30  INF]  Login success
+[2023-05-23 13:39:12.920 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:40:32.996 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:41:01.649 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:41:18.078 +05:30  WRN]  Connection processing ended abnormally.
+System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|5_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+[2023-05-23 13:41:45.686 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:44:05.948 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:49:17.900 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:49:18.023 +05:30  INF]  Login success
+[2023-05-23 13:49:33.210 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-23 13:49:52.845 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Database",
+    "\\Database\\Repository",
+    "\\Models",
+    "\\Models\\QueryModel"
+  ],
+  "SelectedNode": "\\Models\\QueryModel\\ComplaintQueryModel.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,15 @@
+[2023-05-25 11:49:28.945 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-25 11:49:29.054 +05:30  INF]  Login success
+[2023-05-25 11:50:41.875 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-25 11:50:44.859 +05:30  WRN]  Connection processing ended abnormally.
+System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|5_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.BeginRead(ValueTask`1& awaitable)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+[2023-05-25 11:50:52.969 +05:30  INF]  Data Source=10.1.80.230;Initial Catalog=HRMS;Trusted_Connection=False;uid=crmuser;password=Admin@1234;

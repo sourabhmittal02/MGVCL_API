@@ -1,0 +1,6 @@
+[2024-06-17 14:23:23.146 +05:30  INF]  Data Source=10.3.1.10;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-06-17 14:23:23.204 +05:30  INF]  Invalid credentials
+[2024-06-17 14:23:30.604 +05:30  INF]  Data Source=10.3.1.10;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-06-17 14:23:30.892 +05:30  INF]  Login success
+[2024-06-17 14:42:43.869 +05:30  INF]  Data Source=10.3.1.10;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-06-17 14:42:43.939 +05:30  INF]  Login success

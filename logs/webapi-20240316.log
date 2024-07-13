@@ -1,0 +1,18 @@
+[2024-03-16 16:48:17.954 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-03-16 16:48:17.994 +05:30  INF]  Invalid credentials
+[2024-03-16 16:48:44.355 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-03-16 16:48:44.357 +05:30  INF]  Invalid credentials
+[2024-03-16 16:50:37.428 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-03-16 16:50:37.494 +05:30  INF]  Invalid credentials
+[2024-03-16 16:52:10.884 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-03-16 16:52:10.885 +05:30  INF]  Invalid credentials
+[2024-03-16 16:52:19.709 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-03-16 16:52:32.617 +05:30  INF]  Invalid credentials
+[2024-03-16 16:55:23.512 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-03-16 16:55:23.559 +05:30  INF]  Invalid credentials
+[2024-03-16 16:56:24.121 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-03-16 16:56:24.121 +05:30  INF]  Invalid credentials
+[2024-03-16 16:56:33.660 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-03-16 16:56:33.933 +05:30  INF]  Login success
+[2024-03-16 17:22:08.614 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-03-16 17:22:08.887 +05:30  INF]  Login success

@@ -1,0 +1,12 @@
+[2023-05-15 10:49:46.983 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2023-05-15 10:49:47.037 +05:30  INF]  Invalid credentials
+[2023-05-15 10:50:26.131 +05:30  INF]  Data Source=192.168.1.33;Initial Catalog=AVVNL_CALL_CENTER_TEST;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-15 10:50:33.523 +05:30  INF]  Invalid credentials
+[2023-05-15 10:52:26.340 +05:30  ERR]  Object of type 'System.Int64' cannot be converted to type 'System.Int32'.
+[2023-05-15 10:52:26.341 +05:30  INF]  Invalid credentials
+[2023-05-15 10:53:33.157 +05:30  ERR]  Object of type 'System.Int64' cannot be converted to type 'System.Int32'.
+[2023-05-15 10:53:33.157 +05:30  INF]  Invalid credentials
+[2023-05-15 10:55:02.905 +05:30  ERR]  Object of type 'System.Int64' cannot be converted to type 'System.Int32'.
+[2023-05-15 10:55:02.905 +05:30  INF]  Invalid credentials
+[2023-05-15 11:04:52.556 +05:30  INF]  Data Source=192.168.1.33;Initial Catalog=AVVNL_CALL_CENTER_TEST;Trusted_Connection=False;uid=crmuser;password=Admin@1234;
+[2023-05-15 11:04:52.643 +05:30  INF]  Login success

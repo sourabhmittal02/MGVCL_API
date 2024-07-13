@@ -1,0 +1,20 @@
+[2024-01-30 09:39:34.780 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=JDVVNL_CALL_CENTER_Test;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-01-30 09:39:35.344 +05:30  INF]  Login success
+[2024-01-30 09:40:19.033 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=JDVVNL_CALL_CENTER_Test;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-01-30 09:40:23.819 +05:30  INF]  Login success
+[2024-01-30 09:40:36.113 +05:30  INF]  7665504557
+[2024-01-30 09:40:47.534 +05:30  INF]  Error 401 : Credentials Incorrect
+
+[2024-01-30 09:42:45.638 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=JDVVNL_CALL_CENTER_Test;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-01-30 09:42:45.668 +05:30  INF]  Login success
+[2024-01-30 09:45:20.545 +05:30  INF]  8769576997
+[2024-01-30 09:50:14.573 +05:30  INF]  8769576997
+[2024-01-30 09:52:38.304 +05:30  INF]  8769576997
+[2024-01-30 09:53:46.060 +05:30  INF]  Error 416 : Hash is not matching, please check your secure key
+
+[2024-01-30 09:54:09.225 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=JDVVNL_CALL_CENTER_Test;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-01-30 09:54:09.305 +05:30  INF]  Login success
+[2024-01-30 09:54:33.171 +05:30  INF]  8769576997
+[2024-01-30 09:56:55.897 +05:30  INF]  8769576997
+[2024-01-30 09:57:22.167 +05:30  INF]  402,MsgID = 300120241706588832499rajmsdgjdvvnl
+

@@ -1,0 +1,10 @@
+[2024-06-27 11:32:09.286 +05:30  INF]  Data Source=10.3.1.10;Initial Catalog=MGVCL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-06-27 11:32:10.142 +05:30  INF]  Login success
+[2024-06-27 12:15:08.966 +05:30  INF]  Data Source=10.3.1.10;Initial Catalog=MGVCL_CALL_CENTER_Test;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-06-27 12:15:09.238 +05:30  INF]  Login success
+[2024-06-27 18:00:43.179 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-06-27 18:00:43.686 +05:30  INF]  Invalid credentials
+[2024-06-27 18:01:09.377 +05:30  INF]  Data Source=10.3.1.10;Initial Catalog=MGVCL_CALL_CENTER_Test;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-06-27 18:01:10.330 +05:30  INF]  Login success
+[2024-06-27 18:07:22.355 +05:30  INF]  You Already Have Complaint No.2221239 with Status Pending
+[2024-06-27 18:07:33.333 +05:30  INF]  You Already Have Complaint No.2221239 with Status Pending

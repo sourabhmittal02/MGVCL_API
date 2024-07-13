@@ -1,0 +1,13 @@
+[2024-01-06 17:02:27.013 +05:30  ERR]  A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+[2024-01-06 17:02:27.069 +05:30  INF]  Invalid credentials
+[2024-01-06 17:03:21.242 +05:30  INF]  Data Source=10.55.2.20;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2024-01-06 17:03:21.427 +05:30  INF]  Login success
+[2024-01-06 17:09:48.618 +05:30  INF]  You Already Have a pending Complaint No.31041101
+[2024-01-06 17:12:21.276 +05:30  INF]  8769576997
+[2024-01-06 17:12:45.247 +05:30  INF]  You Already Have a pending Complaint No.31041103
+[2024-01-06 17:13:25.517 +05:30  INF]  8769576997
+[2024-01-06 17:13:43.913 +05:30  INF]  Error 416 : Hash is not matching, please check your secure key
+
+[2024-01-06 17:15:05.839 +05:30  INF]  7976745133
+[2024-01-06 17:17:26.556 +05:30  INF]  Error 416 : Hash is not matching, please check your secure key
+

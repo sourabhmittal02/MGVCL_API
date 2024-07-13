@@ -1,0 +1,11 @@
+[2023-12-13 11:33:19.434 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:34:14.462 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:34:43.945 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:35:36.944 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:35:39.405 +05:30  INF]  Invalid credentials
+[2023-12-13 11:35:50.923 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:35:53.134 +05:30  INF]  Invalid credentials
+[2023-12-13 11:35:59.442 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:36:01.061 +05:30  INF]  Invalid credentials
+[2023-12-13 11:36:11.099 +05:30  INF]  Data Source=10.1.80.54;Initial Catalog=JDVVNL_CALL_CENTER;Integrated Security=False;uid=crmuser;password=Admin@1234
+[2023-12-13 11:36:13.313 +05:30  INF]  Login success

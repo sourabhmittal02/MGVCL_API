@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Sandha and Company\PublishHRMSAPI</_PublishTargetUrl>
+    <History>True|2024-01-30T04:28:06.7327814Z;True|2024-01-06T18:14:08.7675928+05:30;True|2024-01-06T17:17:45.5016187+05:30;True|2023-05-25T12:08:43.1873577+05:30;True|2023-05-25T12:00:01.5036771+05:30;True|2023-05-23T16:43:08.4537156+05:30;True|2023-05-23T16:39:42.0024560+05:30;True|2023-05-19T10:17:06.0918254+05:30;True|2023-05-17T15:43:05.4786904+05:30;True|2023-05-16T22:14:31.5458570+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
