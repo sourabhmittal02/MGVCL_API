@@ -238,13 +238,13 @@ namespace CallCenterCoreAPI.Controllers
         }
 
         [HttpPost]
-        [Route("CreateComplaint")]
-        public async Task<IActionResult> CreateComplaint(ModelComplaintMgvcl  modelComplaintMgvcl )
+        [Route("PushHdticket")]
+        public async Task<IActionResult> PushHdticket(ModelHelpDesk  modelHelpDesk )
         {
             ILogger<LoginRepository> modelLogger = _loggerFactory.CreateLogger<LoginRepository>();
             LoginRepository modelloginRepository = new LoginRepository(modelLogger);
-            String lstComplaints = await modelloginRepository.CreateComplain(modelComplaintMgvcl);
-            return Ok(lstComplaints);
+            ModelHelpDeskResponse HdResponse     = await modelloginRepository.PushHdTicketAPI(modelHelpDesk);
+            return Ok(HdResponse);
         }
 
     }

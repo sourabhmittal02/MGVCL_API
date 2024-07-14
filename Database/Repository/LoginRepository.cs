@@ -13,6 +13,9 @@ using Microsoft.Extensions.Logging;
 using CallCenterCoreAPI.Filters;
 using CallCenterCoreAPI.ExternalAPI.TextSmsAPI;
 using CallCenterCoreAPI.Models;
+using RestSharp;
+using Newtonsoft.Json;
+using System.DirectoryServices.Protocols;
 
 namespace CallCenterCoreAPI.Database.Repository
 {
@@ -23,6 +26,7 @@ namespace CallCenterCoreAPI.Database.Repository
         private string MGVCLApiURL = AppSettingsHelper.Setting(Key: "MGVCL_API:ApiURL");
         private string MGVCLsecret_key = AppSettingsHelper.Setting(Key: "MGVCL_API:secret_key");
         private string MGVCLtoken = AppSettingsHelper.Setting(Key: "MGVCL_API:token");
+        private string MGVCLInfraApiURL = AppSettingsHelper.Setting(Key: "MGVCL_InfraAPI:ApiURL");
         public LoginRepository(ILogger<LoginRepository> logger)
         {
             _logger = logger;
@@ -420,29 +424,28 @@ namespace CallCenterCoreAPI.Database.Repository
         /// </summary>
         /// <param name="complaintNo"></param>
         /// <returns></returns>
-        public async Task<String> CreateComplain(ModelComplaintMgvcl  modelComplaintMgvcl )
+        public async Task<ModelHelpDeskResponse> PushHdTicketAPI(ModelHelpDesk  modelComplaintMgvcl)
         {
-            string MGVCLCMSComplaintURL = MGVCLApiURL;
-            var client = new HttpClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, MGVCLCMSComplaintURL);
-            var content = new MultipartFormDataContent();
-            content.Add(new StringContent(MGVCLsecret_key), "secret_key");
-            content.Add(new StringContent(MGVCLtoken), "token");
-            content.Add(new StringContent("LaunchComplaint"), "tag");
-            content.Add(new StringContent(modelComplaintMgvcl.p_compl_number), "p_compl_number");
-            content.Add(new StringContent(modelComplaintMgvcl.cons_no), "cons_no");
-            content.Add(new StringContent(modelComplaintMgvcl.reg_date), "reg_date");
-            content.Add(new StringContent(modelComplaintMgvcl.compl_category), "compl_category");
-            content.Add(new StringContent(modelComplaintMgvcl.compl_subcategory), "compl_subcategory");
-            content.Add(new StringContent(modelComplaintMgvcl.compl_Details), "compl_Details");
-            content.Add(new StringContent(modelComplaintMgvcl.consumer_mobile), "consumer_mobile");
-            content.Add(new StringContent(modelComplaintMgvcl.complaint_source), "complaint_source");
-            request.Content = content;
-            var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            String s = await response.Content.ReadAsStringAsync();
-            SaveCMSResponse(modelComplaintMgvcl.p_compl_number, s, "CreateComplain");
-            return (s);
+            ModelHelpDeskResponse apiResponse = new ModelHelpDeskResponse();
+            var client = new RestClient(MGVCLInfraApiURL);
+            var restRequest = new RestRequest();
+            restRequest.Method = Method.POST;
+            restRequest.AddHeader("Accept", "application/json");
+            restRequest.RequestFormat = DataFormat.Json;
+            restRequest.AddHeader("Authorization", string.Format("Bearer {0}", modelComplaintMgvcl.accessToken));
+            restRequest.AddJsonBody(modelComplaintMgvcl);
+            var response = await client.ExecuteAsync(restRequest);
+            {
+                apiResponse = JsonConvert.DeserializeObject<ModelHelpDeskResponse>(response.Content);
+            }
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                return apiResponse;
+            }
+            else
+            {
+                return apiResponse;
+            }
         }
         #endregion
     }
