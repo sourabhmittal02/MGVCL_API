@@ -1300,6 +1300,27 @@ namespace CallCenterCoreAPI.Database.Repository
         }
         #endregion
 
+        #region GetComplaintClosingActions
+        public List<ModelComplaintOutageTypeList> GetComplaintClosingActions()
+        {
+            List<ModelComplaintOutageTypeList> obj = new List<ModelComplaintOutageTypeList>();
+            DataSet ds = SqlHelper.ExecuteDataset(conn, CommandType.StoredProcedure, "GetComplaintOutageTypeList");
+            //Bind Complaint generic list using dataRow     
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                obj.Add(
+
+                    new ModelComplaintOutageTypeList
+                    {
+                        ClosingTypeId = Convert.ToInt32(dr["ID"]),
+                        ClosingAction = Convert.ToString(dr["Outage_Type"]),
+                    }
+                    );
+            }
+            return (obj);
+        }
+        #endregion
+
         #region GetComplaintSourceDetail
         public List<ModelComplaintSourceList> GetComplaintSourceDetail()
         {

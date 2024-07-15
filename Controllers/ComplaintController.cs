@@ -287,6 +287,18 @@ namespace CallCenterCoreAPI.Controllers
         }
 
         [HttpPost]
+        [Route("GetComplaintClosingActions")]
+        public IActionResult GetComplaintClosingActions()
+        {
+            ILogger<ComplaintRepository> modelLogger = _loggerFactory.CreateLogger<ComplaintRepository>();
+            ComplaintRepository modelComplaintRepository = new ComplaintRepository(modelLogger);
+
+            List<ModelComplaintOutageTypeList> obj;
+            obj = modelComplaintRepository.GetComplaintClosingActions();
+            return Ok(obj);
+        }
+
+        [HttpPost]
         [Route("GetComplaintSource")]
         public IActionResult GetComplaintSource()
         {

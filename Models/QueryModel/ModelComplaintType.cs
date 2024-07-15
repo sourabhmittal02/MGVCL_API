@@ -44,6 +44,14 @@ namespace CallCenterCoreAPI.Models.QueryModel
 
     }
 
+    public class ModelComplaintOutageTypeList
+    {
+
+        public int ClosingTypeId { get; set; }
+        public string ClosingAction { get; set; }
+
+
+    }
     public class ModelComplaintSourceList
     {
 
