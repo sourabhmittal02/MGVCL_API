@@ -238,13 +238,23 @@ namespace CallCenterCoreAPI.Controllers
         }
 
         [HttpPost]
-        [Route("PushHdticket")]
-        public async Task<IActionResult> PushHdticket(ModelHelpDesk  modelHelpDesk )
+        [Route("PushHdticketMEA")]
+        public async Task<IActionResult> PushHdticketMEA(ModelHelpDesk modelHelpDesk)
         {
             ILogger<LoginRepository> modelLogger = _loggerFactory.CreateLogger<LoginRepository>();
             LoginRepository modelloginRepository = new LoginRepository(modelLogger);
-            ModelHelpDeskResponse HdResponse     = await modelloginRepository.PushHdTicketAPI(modelHelpDesk);
+            ModelHelpDeskResponse HdResponse = await modelloginRepository.PushHdTicketAPI(modelHelpDesk);
             return Ok(HdResponse);
+        }
+
+        [HttpPost]
+        [Route("GetAccessTokenMEA")]
+        public async Task<IActionResult> GetAccessTokenMEA(ModelMgvcluser modelMgvcluser)
+        {
+            ILogger<LoginRepository> modelLogger = _loggerFactory.CreateLogger<LoginRepository>();
+            LoginRepository modelloginRepository = new LoginRepository(modelLogger);
+            ModelMgvcluserResponse Response = await modelloginRepository.getAccessTokenAPI(modelMgvcluser);
+            return Ok(Response);
         }
 
     }

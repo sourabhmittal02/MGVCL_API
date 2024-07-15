@@ -27,6 +27,7 @@ namespace CallCenterCoreAPI.Database.Repository
         private string MGVCLsecret_key = AppSettingsHelper.Setting(Key: "MGVCL_API:secret_key");
         private string MGVCLtoken = AppSettingsHelper.Setting(Key: "MGVCL_API:token");
         private string MGVCLInfraApiURL = AppSettingsHelper.Setting(Key: "MGVCL_InfraAPI:ApiURL");
+        private string MGVCLInfraAccessTokenURL = AppSettingsHelper.Setting(Key: "MGVCL_InfraAPI:GetTokenAPIURL");
         public LoginRepository(ILogger<LoginRepository> logger)
         {
             _logger = logger;
@@ -437,6 +438,36 @@ namespace CallCenterCoreAPI.Database.Repository
             var response = await client.ExecuteAsync(restRequest);
             {
                 apiResponse = JsonConvert.DeserializeObject<ModelHelpDeskResponse>(response.Content);
+            }
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                return apiResponse;
+            }
+            else
+            {
+                return apiResponse;
+            }
+        }
+        #endregion
+
+        #region getAccessToken 
+        /// <summary>
+        /// Save Complaint
+        /// </summary>
+        /// <param name="complaintNo"></param>
+        /// <returns></returns>
+        public async Task<ModelMgvcluserResponse> getAccessTokenAPI(ModelMgvcluser modelMgvcluser)
+        {
+            ModelMgvcluserResponse apiResponse = new ModelMgvcluserResponse();
+            var client = new RestClient(MGVCLInfraAccessTokenURL);
+            var restRequest = new RestRequest();
+            restRequest.Method = Method.POST;
+            restRequest.AddHeader("Accept", "application/json");
+            restRequest.RequestFormat = DataFormat.Json;
+            restRequest.AddJsonBody(modelMgvcluser);
+            var response = await client.ExecuteAsync(restRequest);
+            {
+                apiResponse = JsonConvert.DeserializeObject<ModelMgvcluserResponse>(response.Content);
             }
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {

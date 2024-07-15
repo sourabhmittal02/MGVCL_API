@@ -31,5 +31,42 @@ namespace CallCenterCoreAPI.Models.QueryModel
 
         public bool RememberMe { get; set; }
     }
-    
+
+    public class ModelMgvcluser
+    {
+
+        private string _username = "styra_user"; // field
+        public string username   // property
+        {
+            get { return _username; }   // get method
+            set { _username = value; }  // set method
+        }
+
+        private string _password = "Ajh#!ge^g!95L"; // field
+        public string password   // property
+        {
+            get { return _password; }   // get method
+            set { _password = value; }  // set method
+        }
+
+    }
+    public class ModelMgvcluserResponse
+    {
+        public string status { get; set; }
+        public string description { get; set; }
+        public data data { get; set; }
+    }
+
+    public class data
+    {
+        public string jwt { get; set; }
+        public user user { get; set; }
+
+    }
+    public class user
+    {
+        public string username { get; set; }
+        public string fullName { get; set; }
+    }
+
 }
