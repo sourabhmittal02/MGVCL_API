@@ -529,7 +529,7 @@ namespace CallCenterCoreAPI.Controllers
             else
             {
                 returnStatus.response = 0;
-                returnStatus.status = "Error in Saving Remark";
+                returnStatus.status = "Error in Closing Complaint";
                 return BadRequest(returnStatus);
             }
 
