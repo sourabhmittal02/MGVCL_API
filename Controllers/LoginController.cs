@@ -244,7 +244,7 @@ namespace CallCenterCoreAPI.Controllers
             ILogger<LoginRepository> modelLogger = _loggerFactory.CreateLogger<LoginRepository>();
             LoginRepository modelloginRepository = new LoginRepository(modelLogger);
             ModelHelpDeskResponse HdResponse = await modelloginRepository.PushHdTicketAPI(modelHelpDesk);
-            return Ok(HdResponse);
+            return Ok(HdResponse.description);
         }
 
         [HttpPost]
@@ -253,7 +253,7 @@ namespace CallCenterCoreAPI.Controllers
         {
             ILogger<LoginRepository> modelLogger = _loggerFactory.CreateLogger<LoginRepository>();
             LoginRepository modelloginRepository = new LoginRepository(modelLogger);
-            ModelMgvcluserResponse Response = await modelloginRepository.getAccessTokenAPI(modelMgvcluser);
+            string Response = await modelloginRepository.getAccessTokenAPI(modelMgvcluser);
             return Ok(Response);
         }
 

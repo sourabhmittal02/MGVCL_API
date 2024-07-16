@@ -433,12 +433,17 @@ namespace CallCenterCoreAPI.Database.Repository
             restRequest.Method = Method.POST;
             restRequest.AddHeader("Accept", "application/json");
             restRequest.RequestFormat = DataFormat.Json;
+            ModelMgvcluser modelMgvcluser = new ModelMgvcluser();
+            modelMgvcluser.username = "styra_user";
+            modelMgvcluser.password = "Ajh#!ge^g!95L";
+            modelComplaintMgvcl.accessToken = await getAccessTokenAPI(modelMgvcluser);
             restRequest.AddHeader("Authorization", string.Format("Bearer {0}", modelComplaintMgvcl.accessToken));
             restRequest.AddJsonBody(modelComplaintMgvcl);
             var response = await client.ExecuteAsync(restRequest);
             {
                 apiResponse = JsonConvert.DeserializeObject<ModelHelpDeskResponse>(response.Content);
             }
+            SaveCMSResponse(modelComplaintMgvcl.HDticketID, apiResponse.description.ToString(), "Smart Meter Complaint Register");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 return apiResponse;
@@ -456,7 +461,7 @@ namespace CallCenterCoreAPI.Database.Repository
         /// </summary>
         /// <param name="complaintNo"></param>
         /// <returns></returns>
-        public async Task<ModelMgvcluserResponse> getAccessTokenAPI(ModelMgvcluser modelMgvcluser)
+        public async Task<string> getAccessTokenAPI(ModelMgvcluser modelMgvcluser)
         {
             ModelMgvcluserResponse apiResponse = new ModelMgvcluserResponse();
             var client = new RestClient(MGVCLInfraAccessTokenURL);
@@ -471,11 +476,11 @@ namespace CallCenterCoreAPI.Database.Repository
             }
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                return apiResponse;
+                return apiResponse.data.jwt.ToString();
             }
             else
             {
-                return apiResponse;
+                return apiResponse.data.jwt.ToString();
             }
         }
         #endregion
